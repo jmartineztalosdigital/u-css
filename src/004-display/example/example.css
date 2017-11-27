@@ -1,5 +1,74 @@
 /* Practice Layout */
+li {
+  display: inline;
+}
+
+nav {
+  padding: 10px;
+  background-color: darkgray;
+}
+
+.display-table {
+  border-collapse: collapse;
+  border-style: hidden;
+  display: table;
+  width: 100%;
+}
+
+.common-margin {
+  padding: 10px 20px;
+}
+
+.display-table > div {
+  display: table-row;
+}
+
+.display-table > div > div {
+  background-color: darkgray;
+  border: solid white 1px;
+  display: table-cell;
+  padding: 10px;
+  text-align: center;
+}
+
+.display-table > div:first-child {
+  display: table-header-group;
+  font-weight: bold;
+
+}
+
+.gallery-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
+}
+
+.gallery-box > div {
+  border: solid red 2px;
+  height: 200px;
+  padding: 2px;
+  margin: 10px;
+  width: 200px;
+
+}
+
+.page-content {
+  background-color: whitesmoke;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0;
+}
+
+.title {
+  font-size: 2rem;
+}
 
 .trash{
 	color: black;
+}
+
+.two-column {
+  display: inline-block;
+  max-width: 50%;
+  vertical-align: middle;
 }
