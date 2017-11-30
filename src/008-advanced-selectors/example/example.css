@@ -1,5 +1,118 @@
 /* Practice Layout */
 
+aside {
+  width: 30%;
+}
+
+footer {
+  background-color: dimgray;
+  color: white;
+  height: 200px;
+  line-height: 200px;
+  width: 100%;
+}
+
+footer div {
+  margin: 0 auto;
+  width: 80%;
+}
+
+h4 {
+  padding: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+li {
+  font-size: 0.8rem;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+section {
+  width: 70%;
+}
+
+.aside-section {
+  padding: 0 40px;
+}
+
+.aside-section-avatar-item {
+  display: flex;
+  padding: 10px;
+}
+
+.aside-section-avatar-list img {
+  height: 100px;
+  padding: 0 10px;
+  width: 80px;
+}
+
+.aside-title-section {
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+
+.category-list li:hover {
+  color: lightpink;
+}
+
+.currency-list li {
+  background-color: lightgray;
+  border-bottom: solid lightpink thin;
+  margin: 2px 0;
+  padding: 4px;
+}
+
+.currency-list li:hover {
+  background-color: lightpink;
+}
+
+.new-collection {
+  background-color: lightpink;
+  color: white;
+  font-size: 0.8rem;
+  left: 20px;
+  padding: 4px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 20px;
+  width: 90px;
+  z-index: 2;
+}
+
+.pagination-info {
+  width: 100%;
+}
+
+.section-card-item {
+  position: relative;
+  width: 30%;
+}
+
+.section-card-item img {
+  width: 250px;
+  height: 350px;
+}
+
+.section-card-item img:hover {
+  opacity: 0.6;
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+
+
+.section-card-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .trash{
 	color: black;
+}
+
+.two-column-layer {
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
 }
