@@ -1,7 +1,21 @@
 /* Practice Layout */
 
 aside {
-  width: 30%;
+  width: 20%;
+}
+
+button {
+  background-color: transparent;
+  height: 40px;
+}
+
+button:nth-child(even) {
+  border: whitesmoke solid thin;
+}
+
+button:nth-child(odd) {
+  background-color: black;
+  border: black solid thin;
 }
 
 footer {
@@ -29,10 +43,6 @@ li {
   text-transform: uppercase;
 }
 
-section {
-  width: 70%;
-}
-
 .aside-section {
   padding: 0 40px;
 }
@@ -42,6 +52,10 @@ section {
   padding: 10px;
 }
 
+.aside-section-avatar-item-detail p {
+  margin: 0;
+}
+
 .aside-section-avatar-list img {
   height: 100px;
   padding: 0 10px;
@@ -49,6 +63,7 @@ section {
 }
 
 .aside-title-section {
+  font-size: 1.2rem;
   padding: 10px 0;
   text-transform: uppercase;
 }
@@ -68,6 +83,19 @@ section {
   background-color: lightpink;
 }
 
+.display-selector {
+  display: flex;
+  width: 20%;
+}
+
+.display-selector i.black-icon {
+  color: black;
+}
+
+.display-selector i.white-icon {
+  color: white;
+}
+
 .new-collection {
   background-color: lightpink;
   color: white;
@@ -82,17 +110,19 @@ section {
 }
 
 .pagination-info {
-  width: 100%;
+  font-size: 1.3rem;
+  padding-bottom: 40px;
+  width: 80%;
 }
 
 .section-card-item {
+  margin: 10px;
   position: relative;
-  width: 30%;
 }
 
 .section-card-item img {
-  width: 250px;
   height: 350px;
+  width: 250px;
 }
 
 .section-card-item img:hover {
@@ -101,10 +131,26 @@ section {
   transition: all 0.5s;
 }
 
+.section-card-item p {
+  margin: 2px 0;
+}
+
+.section-card-item-image {
+  height: 350px;
+  overflow: hidden;
+  width: 250px;
+}
+
 
 .section-card-list {
+  align-content: flex-start;
   display: flex;
   flex-wrap: wrap;
+  width: 70%;
+}
+
+.section-display-selectors {
+  width: 10px;
 }
 
 .trash{
