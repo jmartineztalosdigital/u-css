@@ -1,5 +1,102 @@
 /* Practice Layout */
+button {
+  color: white;
+  background-color: rgb(251,194,212);
+  border: hidden;
+  line-height: 50px;
+  height: 50px;
+  margin: 10px 0;
+  text-align: center;
+  width: 200px;
+}
+
+button:hover {
+  color: rgb(251,194,212);
+  background-color: rgb(255,255,255);
+  border: rgb(251,194,212) thin solid;
+}
+
+footer {
+  background-color: rgb(251,194,212);
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+hr {
+  background-color: white;
+}
+
+input, textarea {
+  background-color: #EEEEEE;
+  border: hidden;
+  height: 30px;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+  margin: 10px;
+}
+
+li:hover {
+  color: black;
+}
+
+textarea {
+  height: 200px;
+}
+
+ul {
+  padding: 0;
+}
+
+.footer-section {
+  color: white;
+  margin: 0 20px;
+  width: 15vw;
+}
+
+.page-content {
+  padding: 0;
+}
+
+.page-content > div {
+  background-image: url("../solved/images/background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30vh;
+}
+
+.page-content header {
+  background-color: black;
+  color: rgba(255,255,255,.6);
+  font-size: 2rem;
+  line-height: 30vh;
+  opacity: .5;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100vw;
+}
+.section-email {
+  margin: 0 auto;
+  width: 30vw;
+}
 
 .trash{
 	color: black;
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    background-color: red;
+  }
+
+  .section-email {
+    width: 600px;
+  }
 }
