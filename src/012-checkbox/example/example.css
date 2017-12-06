@@ -1,5 +1,152 @@
 /* Practice Layout */
+fieldset {
+  border: lightgray solid thin;
+  padding: 20px;
+  width: 200px;
+}
+
+nav {
+  background-color: white;
+  height: 800px;
+  margin: -20px -20px;
+  position: relative;
+}
+
+nav > label:hover {
+  background-color: #e0dede;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+input[type="radio"],  input[type="checkbox"] {
+  display:none;
+  font-size:20px;
+}
+
+input[type="checkbox"]:checked + i:before {
+  color:#2aa1c0;
+  content:"check_box";
+}
+
+input[type="checkbox"]:not(:checked) + i:before {
+  color:#2aa1c0;
+  content:"check_box_outline_blank";
+}
+
+input[type="checkbox"][disabled]:checked + i:before {
+  color: lightgray;
+  content:"check_box";
+}
+
+input[type="checkbox"][disabled]:not(:checked) + i:before {
+  color: lightgray;
+  content:"check_box_outline_blank";
+}
+
+input[type="radio"]:checked + i:before {
+  color:#2aa1c0;
+  content:"radio_button_checked";
+}
+
+input[type="radio"]:not(:checked) + i:before {
+  color:#2aa1c0;
+  content:"radio_button_unchecked";
+}
+
+input[type="radio"][disabled]:checked + i:before {
+  color: lightgray;
+  content:"radio_button_checked";
+}
+
+input[type="radio"][disabled]:not(:checked) + i:before {
+  color: lightgray;
+  content:"radio_button_unchecked";
+}
+
+[type=radio]:checked + label {
+  background-color: white;
+}
+
+[type=radio]:checked + label + .div-forms {
+  z-index: 1;
+}
+
+[type=radio]:not(:checked) + label + .div-forms {
+  z-index: -1;
+}
+
+.card-item {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.card-item:hover {
+  background-color: lightgray;
+}
+
+.card-item img {
+  height: 100px;
+  width: 100px;
+}
+
+.card-item-detail {
+  margin: 0 100px;
+  width: 200px;
+}
+
+.div-forms {
+  background-color: white;
+  padding: 20px;
+  position: absolute;
+  z-index: -1;
+}
+
+.input:checked + .label + .div-forms {
+  z-index: 1;
+}
+
+.input-wrapper {
+  align-items: center;
+  display: flex;
+}
+
+.label-empty {
+  background-color: #EFEFEF;
+  height: 80px;
+  display: inline-block;
+  width: 10%;
+}
+
+.label-form {
+  background-color: #EFEFEF;
+  height: 80px;
+  display: inline-block;
+  line-height: 80px;
+  padding: 0 20px;
+  text-align: center;
+  width: 15%;
+}
+
+.page-content {
+  border: lightgray solid thin;
+  box-shadow: 10px 10px 10px lightgray;
+  margin: 50px;
+  width: 40vw;
+}
+
 
 .trash{
 	color: black;
+}
+
+#checkboxes:checked, #radio-buttons:checked, #cards:checked {
+  background-color: white;
+}
+
+#text {
+  display: none;
 }

@@ -1,40 +1,183 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>012 - Checkboxes and Radio Buttons</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+<head>
+  <meta charset="utf-8">
+  <title>012 - Checkboxes and Radio Buttons</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
 
-    <!-- Ignore this, it's for the header --> 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <link href="../../app.css" rel="stylesheet" type="text/css">
+  <!-- Ignore this, it's for the header -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <link href="../../app.css" rel="stylesheet" type="text/css">
 
-    <!-- Import App Css file -->
-    <link href="./example.css" rel="stylesheet" type="text/css">
-    
-  </head>
-  <body>
-  	<!-- Always shows a header, even in smaller screens. -->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header">
-        <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
-          <i class="material-icons">home</i>
-        </a>
-        <div class="mdl-layout__header-row">
-          <!-- Title -->
-          <span class="mdl-layout-title">012 - Checkboxes and Radio Buttons</span>
-          <!-- Add spacer, to align navigation to the right -->
-          <div class="mdl-layout-spacer"></div>
-        </div>
-      </header>
-      <main class="mdl-layout__content">
-        <div class="page-content">
-         <!-- Practice Content Goes Here -->
-        </div>
-      </main>
+  <!-- Import App Css file -->
+  <link href="../solved/css/reset.css"/>
+  <link href="./example.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
+      <i class="material-icons">home</i>
+    </a>
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">012 - Checkboxes and Radio Buttons</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
     </div>
+  </header>
+  <main class="mdl-layout__content">
+    <div class="page-content">
+      <nav>
+        <input type="radio" id="checkboxes" name="tab-name"/>
+        <label class="label-form" for="checkboxes">Checkboxes</label>
+        <div class="div-forms">
+          <section>
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in arcu magna. Pellentesque sit amet
+              vestibulum ex, eget placerat metus. Sed vel sagittis massa, eu interdum mauris. Ut congue ipsum ex, eu
+              egestas
+              nisi ullamcorper vitae. Suspendisse potenti. Suspendisse blandit placerat ex, vitae suscipit purus dapibus
+              id.
+              Nulla facilisi. Mauris porttitor diam eu orci sodales tempor. Donec rutrum sit amet quam vitae congue.
+              Donec
+              sit amet convallis risus. Quisque mi augue, mattis lacinia mollis non, iaculis sit amet lectus.</p>
+          </section>
+          <form id="form-checkboxes">
+            <fieldset>
+              <p>Checkboxes</p>
+              <div class="input-wrapper">
+                <input type="checkbox" id="checkboxes1" checked="checked">
+                <i class="material-icons"></i>
+                <label for="checkboxes1">First checkbox</label>
+              </div>
+              <div class="input-wrapper">
+                <input type="checkbox" id="checkboxes2">
+                <i class="material-icons"></i>
+                <label for="checkboxes2">Second checkbox</label>
+              </div>
+              <div class="input-wrapper">
+                <input type="checkbox" id="checkboxes3" disabled="disabled">
+                <i class="material-icons"></i>
+                <label for="checkboxes3">Disabled</label>
+              </div>
+              <div class="input-wrapper">
+                <input type="checkbox" id="checkboxes4" disabled="disabled" checked="checked">
+                <i class="material-icons"></i>
+                <label for="checkboxes4">Disabled & checked</label>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <input type="radio" id="radio-buttons" name="tab-name"/>
+        <label class="label-form" for="radio-buttons">Radio Buttons</label>
+        <div class="div-forms">
+          <section>
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in arcu magna. Pellentesque sit amet
+              vestibulum ex, eget placerat metus. Sed vel sagittis massa, eu interdum mauris. Ut congue ipsum ex, eu
+              egestas
+              nisi ullamcorper vitae. Suspendisse potenti. Suspendisse blandit placerat ex, vitae suscipit purus dapibus
+              id.
+              Nulla facilisi. Mauris porttitor diam eu orci sodales tempor. Donec rutrum sit amet quam vitae congue.
+              Donec
+              sit amet convallis risus. Quisque mi augue, mattis lacinia mollis non, iaculis sit amet lectus.</p>
+          </section>
+          <form id="form-radio-buttons">
+            <fieldset>
+              <p>Radio Buttons</p>
+              <div class="input-wrapper">
+                <input type="radio" id="radios1" checked="checked" name="radios-group">
+                <i class="material-icons"></i>
+                <label for="radios1">First radio</label>
+              </div>
+              <div class="input-wrapper">
+                <input type="radio" id="radios2" name="radios-group">
+                <i class="material-icons"></i>
+                <label for="radios2">Second radio</label>
+              </div>
+              <div class="input-wrapper">
+                <input type="radio" id="radios3" checked="checked" disabled="disabled" name="radios-group-disabled">
+                <i class="material-icons"></i>
+                <label for="radios3">Disabled</label>
+              </div>
+              <div class="input-wrapper">
+                <input type="radio" id="radios4" disabled="disabled" name="radios-group-disabled">
+                <i class="material-icons"></i>
+                <label for="radios4">Disabled &amp; checked</label>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <input type="radio" id="cards" name="tab-name"/>
+        <label class="label-form" for="cards">Cards</label>
+        <div class="div-forms">
+          <section>
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in arcu magna. Pellentesque sit amet
+              vestibulum ex, eget placerat metus. Sed vel sagittis massa, eu interdum mauris. Ut congue ipsum ex, eu
+              egestas
+              nisi ullamcorper vitae. Suspendisse potenti. Suspendisse blandit placerat ex, vitae suscipit purus dapibus
+              id.
+              Nulla facilisi. Mauris porttitor diam eu orci sodales tempor. Donec rutrum sit amet quam vitae congue.
+              Donec
+              sit amet convallis risus. Quisque mi augue, mattis lacinia mollis non, iaculis sit amet lectus.</p>
+          </section>
+          <form id="form-cards">
+            <div class="card-item">
+              <img src="../solved/images/user.png">
+              <div class="card-item-detail">
+                <p>Headline</p>
+                <p>Lorem ipsum dolor sit amet...</p>
+              </div>
+              <div class="input-wrapper">
+                <input type="checkbox" checked="checked">
+                <i class="material-icons"></i>
+              </div>
+            </div>
+            <div class="card-item">
+              <img src="../solved/images/user.png">
+              <div class="card-item-detail">
+                <p>Headline</p>
+                <p>Lorem ipsum dolor sit amet...</p>
+              </div>
+              <div class="input-wrapper">
+                <input type="checkbox" disabled="disabled">
+                <i class="material-icons"></i>
+              </div>
+            </div>
+            <div class="card-item">
+              <img src="../solved/images/user.png">
+              <div class="card-item-detail">
+                <p>Headline</p>
+                <p>Lorem ipsum dolor sit amet...</p>
+              </div>
+              <div class="input-wrapper">
+                <input type="checkbox" disabled="disabled">
+                <i class="material-icons"></i>
+              </div>
+            </div>
+            <div class="card-item">
+              <img src="../solved/images/user.png">
+              <div class="card-item-detail">
+                <p>Headline</p>
+                <p>Lorem ipsum dolor sit amet...</p>
+              </div>
+              <div class="input-wrapper">
+                <input type="checkbox" disabled="disabled">
+                <i class="material-icons"></i>
+              </div>
+            </div>
+          </form>
+        </div>
+      </nav>
+    </div>
+  </main>
+</div>
 
-  </body>
+</body>
 </html>
