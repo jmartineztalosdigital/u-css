@@ -1,0 +1,36 @@
+input[type=checkbox] + div {
+  display: block;
+}
+
+.info-links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info-links > div {
+  max-width: 40%;
+  min-width: 40%;
+  padding: 10px;
+}
+
+.product {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product > div {
+  margin: 20px;
+}
+
+.product-detail {
+  max-width: 10vw;
+  order: 2;
+}
+
+.product-image {
+  order: 1;
+}
+
+.product-thumbnail {
+  order: 0;
+}

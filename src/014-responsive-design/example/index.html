@@ -1,40 +1,180 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>014 - Responsive Design and Media Queries</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+<head>
+  <meta charset="utf-8">
+  <title>014 - Responsive Design and Media Queries</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
 
-    <!-- Ignore this, it's for the header --> 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <link href="../../app.css" rel="stylesheet" type="text/css">
+  <!-- Ignore this, it's for the header -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <link href="../../app.css" rel="stylesheet" type="text/css">
 
-    <!-- Import App Css file -->
-    <link href="./example.css" rel="stylesheet" type="text/css">
-    
-  </head>
-  <body>
-  	<!-- Always shows a header, even in smaller screens. -->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header">
-        <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
-          <i class="material-icons">home</i>
-        </a>
-        <div class="mdl-layout__header-row">
-          <!-- Title -->
-          <span class="mdl-layout-title">014 - Responsive Design and Media Queries</span>
-          <!-- Add spacer, to align navigation to the right -->
-          <div class="mdl-layout-spacer"></div>
-        </div>
-      </header>
-      <main class="mdl-layout__content">
-        <div class="page-content">
-         <!-- Practice Content Goes Here -->
-        </div>
-      </main>
+  <!-- Import App Css file -->
+  <link href="../solved/css/reset.css">
+  <link href="./example.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 480px)" href="small-device.css"/>
+  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 720px)" href="medium-device.css"/>
+  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 1280px)" href="large-device.css"/>
+
+</head>
+<body>
+<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
+      <i class="material-icons">home</i>
+    </a>
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">014 - Responsive Design and Media Queries</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
     </div>
+  </header>
+  <main class="mdl-layout__content">
+    <div class="page-content">
+      <header>
+        <i class="material-icons">gesture</i>
+        <ul class="header-links">
+          <li>shop</li>
+          <li>news</li>
+          <li>customize</li>
+          <li>cart</li>
+          <li>checkout</li>
+        </ul>
+      </header>
+      <nav>
+        <div>
+          <a>home</a>/<a>tops</a>/<a>green top</a>
+        </div>
+        <div>
+          <i class="material-icons">keyboard_arrow_left</i>
+          <i class="material-icons">keyboard_arrow_right</i>
+        </div>
+      </nav>
+      <section class="product">
+        <div class="product-image">
+          <img src="../solved/images/products/product-31-a-big-notinclude.jpg"/>
+        </div>
+        <div class="product-thumbnail">
+          <img src="../solved/images/products/product-31-a-small-notinclude.jpg"/>
+          <img src="../solved/images/products/product-31-b-small-notinclude.jpg"/>
+          <img src="../solved/images/products/product-31-c-small-notinclude.jpg"/>
+        </div>
+        <div class="product-detail">
+          <p>Green Fancy Top</p>
+          <p>$100.000</p>
+          <p>$50.000</p>
+          <p>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star_border</i>
+          </p>
+          <p>Lorem ipsum dolor sit amet, integer modi, hac platea aenean sed ullamcorper phasellus, dui suspendisse dui,
+            magna vel. In libero velit enim optio et, in maecenas, in dolor pellentesque. Velit non dui. Volutpat
+            vehicula sodales lectus donec platea lacus, erat a et morbi ac ac aenean.</p>
+        </div>
+      </section>
+      <section class="promotion">
+        <p>Get 10% off on your first order</p>
+        <button>get a discount</button>
+      </section>
+      <section class="info-links">
+        <div>
+          <input type="checkbox"/>About us
+          <div>
+            <p>Lorem ipsum dolor sit amet, ut vel mollis, amet enim. Leo torquent, mauris at sit dictumst mollis nulla,
+              nulla mollis nulla amet. Integer ultricies mauris, suspendisse cras ac rutrum amet, id quam porttitor
+              porttitor scelerisque pellentesque ullamcorper. Vehicula in pellentesque. Quis fermentum a semper metus
+              ac,
+              id nec. Mauris lorem diam ligula ut sed nunc. Tincidunt velit. Vehicula lobortis, vestibulum dui mauris
+              diam
+              sem, laoreet proin imperdiet posuere.
+            </p>
+            <p>
+              Neque amet venenatis auctor vivamus, elementum mollis neque, nulla scelerisque duis eu integer.
+            </p>
+            <p>
+              <i class="fa fa-cc-mastercard"></i>
+              <i class="fa fa-cc-visa"></i>
+              <i class="fa fa-cc-amex"></i>
+              <i class="fa fa-cc-diners-club"></i>
+              <i class="fa fa-cc-paypal"></i>
+              <i class="fa fa-cc-jcb"></i>
+            </p>
+          </div>
+        </div>
+        <div>
+          <input type="checkbox"/>open hours
+          <div class="open-hours">
+            <div>
+              <p>monday</p>
+              <p>10:00 - 20:00</p>
+            </div>
+            <div>
+              <p>tuesday</p>
+              <p>10:00 - 20:00</p>
+            </div>
+            <div>
+              <p>wednesday</p>
+              <p>10:00 - 20:00</p>
+            </div>
+            <div>
+              <p>thursday</p>
+              <p>10:00 - 20:00</p>
+            </div>
+            <div>
+              <p>friday</p>
+              <p>10:00 - 20:00</p>
+            </div>
+            <div>
+              <p>saturday</p>
+              <p>10:00 - 20:00</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <input type="checkbox"/>Latest products
+          <div class="latest-products">
+            <img src="../solved/images/latest-products/p1.jpg"/>
+            <img src="../solved/images/latest-products/p2.jpg"/>
+            <img src="../solved/images/latest-products/p3.jpg"/>
+            <img src="../solved/images/latest-products/p4.jpg"/>
+            <img src="../solved/images/latest-products/p5.jpg"/>
+            <img src="../solved/images/latest-products/p6.jpg"/>
+            <img src="../solved/images/latest-products/p7.jpg"/>
+            <img src="../solved/images/latest-products/p8.jpg"/>
+            <img src="../solved/images/latest-products/p9.jpg"/>
+            <img src="../solved/images/latest-products/p10.jpg"/>
+          </div>
+        </div>
+        <div>
+          <input type="checkbox"/>our store
+          <div>
+            <p>Lorem ipsum dolor sit amet, ut vel mollis, amet enim.</p>
+            <p>Lorem mollis MSU 8-9, Levels 7&9 Birmingham B5 4BG (44) 121 616 2169 </p>
+            <p>lalala.com</p>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <ul>
+          <li>conditions</li>
+          <li>help</li>
+          <li>privacy</li>
+          <li>term</li>
+        </ul>
+      </footer>
+    </div>
+  </main>
+</div>
 
-  </body>
+</body>
 </html>
