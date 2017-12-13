@@ -1,10 +1,19 @@
-input[type=checkbox] + div {
+input[type=checkbox] + label + div {
   display: block;
+}
+
+input[type=checkbox] + label > i {
+  display: none;
+}
+
+input[type=checkbox] + label {
+  padding: 0 0 20px 0;
 }
 
 .info-links {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .info-links > div {
@@ -13,17 +22,20 @@ input[type=checkbox] + div {
   padding: 10px;
 }
 
+.page-content header {
+  padding: 50px 20px 100px 20px;
+}
+
 .product {
   flex-direction: row;
   justify-content: center;
 }
 
 .product > div {
-  margin: 20px;
+  margin: 5px;
 }
 
 .product-detail {
-  max-width: 10vw;
   order: 2;
 }
 
@@ -32,5 +44,6 @@ input[type=checkbox] + div {
 }
 
 .product-thumbnail {
+  flex-direction: column;
   order: 0;
 }

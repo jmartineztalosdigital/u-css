@@ -3,21 +3,57 @@
 footer {
   background-color: #E91E63;
   color: white;
+  padding: 20px 50px;
 }
 
-input[type=checkbox]:checked + div {
+footer li {
+  font-size: 1.2rem;
+  padding: 0 10px;
+  text-transform: capitalize;
+}
+
+footer ul {
+  padding: 0;
+}
+
+header li {
+  font-size: 1.4rem;
+  padding: 0 20px;
+  text-transform: uppercase;
+}
+
+header li:hover {
+  border-bottom: white 2px solid;
+}
+
+input[type=checkbox]:checked + label + div {
   display: block;
 }
 
-input[type=checkbox] + div {
+input[type=checkbox] + label + div {
+  display: none;
+}
+
+input[type=checkbox] + label {
+  display: flex;
+  font-size: 1.2rem;
+  justify-content: space-between;
+  padding: 0 0 50px 0;
+  text-transform: capitalize;
+}
+
+input[type=checkbox] {
   display: none;
 }
 
 li {
   color: white;
+  cursor: pointer;
   display: inline;
   list-style: none;
 }
+
+
 
 nav {
   display: flex;
@@ -25,7 +61,40 @@ nav {
   justify-content: space-between;
   line-height: 10vh;
   margin: 0 auto;
-  padding: 10px;
+  padding: 40px 20px;
+}
+
+nav i {
+  color: #E91E63;
+}
+
+nav i:hover {
+  background-color: lightgray;
+  border-radius: 20px;
+}
+
+nav .breadcrumb {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+nav .breadcrumb a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav .breadcrumb a:hover {
+  color: dodgerblue;
+}
+
+nav .breadcrumb span {
+  color: gray;
+  font-weight: bold;
+}
+
+.product div {
+  margin: 10px 0;
 }
 
 ul {
@@ -44,6 +113,10 @@ ul {
 
 .latest-products > img {
   margin-bottom: 5px;
+}
+
+.menu {
+  display: inline-block;
 }
 
 .open-hours > div {
@@ -66,7 +139,8 @@ ul {
   display: flex;
   height: 15vh;
   justify-content: space-between;
-  padding: 50px;
+  /* opacity: 0.4; */
+  padding: 20px 20px 100px 20px;
 }
 
 .page-content header i {
@@ -80,20 +154,52 @@ ul {
   padding: 20px;
 }
 
+.product-detail > p {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.product-detail > p del {
+  color: lightgray;
+}
+
+.product-detail > p:last-child {
+  font-weight: lighter;
+}
+
+.product-detail-review {
+  color: dodgerblue;
+}
+
 .product-image > img {
   max-width: 90vw;
 }
 
+.product-thumbnail {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-thumbnail > img {
+  margin: 10px 5px 0 0;
+}
+
+.product-thumbnail > img:hover {
+  opacity: .5;
+}
+
 .promotion {
   background: url("../solved/images/backgrounds/bg2.jpg") no-repeat fixed;
-  height: 40vh;
-  padding: 100px;
-  text-align: right;
+  background-size: cover;
+  height: 200px;
+  padding: 100px 10px;
+  text-align: center;
 }
 
 .promotion > p {
   color: white;
   font-size: 3rem;
+  line-height: 3rem;
 }
 
 .promotion > button {
@@ -101,11 +207,40 @@ ul {
   border: #448AFF solid thin;
   color: white;
   font-size: 1.5rem;
-  padding: 3px;
+  padding: 10px;
   text-transform: uppercase;
   width: 300px;
 }
 
-.trash{
-	color: black;
+.promotion > button:hover {
+  opacity: .5;
+}
+
+.toggle-menu {
+  background-color: lightgray;
+  display: none;
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 70vw;
+  z-index: 2;
+}
+
+.toggle-menu li {
+  color: black;
+  display: block;
+  text-transform: uppercase;
+}
+
+.toggle-menu ul {
+  padding: 10px 20px;
+}
+
+.trash {
+  color: black;
+}
+
+#toggle-menu-icon {
+  display: inline-block;
 }

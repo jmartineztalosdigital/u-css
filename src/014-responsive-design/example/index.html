@@ -35,19 +35,32 @@
   </header>
   <main class="mdl-layout__content">
     <div class="page-content">
+      <div class="toggle-menu">
+        <ul>
+          <li id="close-toggle-menu">X</li>
+          <li>shop</li>
+          <li>news!</li>
+          <li>customize</li>
+          <li>cart</li>
+          <li>checkout</li>
+        </ul>
+      </div>
       <header>
-        <i class="material-icons">gesture</i>
+        <div>
+          <i class="material-icons" id="toggle-menu-icon"">reorder</i>
+          <i class="material-icons">gesture</i>
+        </div>
         <ul class="header-links">
           <li>shop</li>
-          <li>news</li>
+          <li>news!</li>
           <li>customize</li>
           <li>cart</li>
           <li>checkout</li>
         </ul>
       </header>
       <nav>
-        <div>
-          <a>home</a>/<a>tops</a>/<a>green top</a>
+        <div class="breadcrumb">
+          <a>home</a>&nbsp;/&nbsp;<a>tops</a>&nbsp;/&nbsp;<span>green top</span>
         </div>
         <div>
           <i class="material-icons">keyboard_arrow_left</i>
@@ -65,9 +78,10 @@
         </div>
         <div class="product-detail">
           <p>Green Fancy Top</p>
-          <p>$100.000</p>
-          <p>$50.000</p>
           <p>
+            <del>$100.000</del>&nbsp;$50.000
+          </p>
+          <p class="product-detail-review">
             <i class="material-icons">star</i>
             <i class="material-icons">star</i>
             <i class="material-icons">star</i>
@@ -85,7 +99,7 @@
       </section>
       <section class="info-links">
         <div>
-          <input type="checkbox"/>About us
+          <input type="checkbox" id="about-us"/><label for="about-us"><span>About us</span><i class="material-icons">keyboard_arrow_down</i></label>
           <div>
             <p>Lorem ipsum dolor sit amet, ut vel mollis, amet enim. Leo torquent, mauris at sit dictumst mollis nulla,
               nulla mollis nulla amet. Integer ultricies mauris, suspendisse cras ac rutrum amet, id quam porttitor
@@ -109,7 +123,8 @@
           </div>
         </div>
         <div>
-          <input type="checkbox"/>open hours
+          <input type="checkbox" id="open-hours"/><label for="open-hours"><span>open hours</span><i
+          class="material-icons">keyboard_arrow_down</i></label>
           <div class="open-hours">
             <div>
               <p>monday</p>
@@ -138,7 +153,8 @@
           </div>
         </div>
         <div>
-          <input type="checkbox"/>Latest products
+          <input type="checkbox" id="latest-products"/><label for="latest-products"><span>Latest products</span><i
+          class="material-icons">keyboard_arrow_down</i></label>
           <div class="latest-products">
             <img src="../solved/images/latest-products/p1.jpg"/>
             <img src="../solved/images/latest-products/p2.jpg"/>
@@ -153,7 +169,7 @@
           </div>
         </div>
         <div>
-          <input type="checkbox"/>our store
+          <input type="checkbox" id="our-store"/><label for="our-store"><span>our store</span><i class="material-icons">keyboard_arrow_down</i></label>
           <div>
             <p>Lorem ipsum dolor sit amet, ut vel mollis, amet enim.</p>
             <p>Lorem mollis MSU 8-9, Levels 7&9 Birmingham B5 4BG (44) 121 616 2169 </p>
@@ -175,6 +191,8 @@
     </div>
   </main>
 </div>
-
+<script src="https://use.fontawesome.com/bcb0bef265.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<script src="example.js"></script>
 </body>
 </html>

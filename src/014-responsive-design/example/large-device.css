@@ -2,3 +2,12 @@
   max-width: 20%;
   min-width: 20%;
 }
+
+.product-detail {
+  width: 500px;
+}
+
+.promotion {
+  padding: 100px 50px;
+  text-align: right;
+}

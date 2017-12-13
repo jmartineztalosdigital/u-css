@@ -1,3 +1,7 @@
 .header-links {
   display: block;
 }
+
+#toggle-menu-icon {
+  display: none;
+}
