@@ -1,0 +1,7 @@
+footer {
+  justify-content: space-between;
+}
+
+footer > div {
+  width: 25%;
+}

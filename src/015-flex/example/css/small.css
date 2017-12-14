@@ -1,0 +1,30 @@
+footer {
+  padding: 10px;
+  text-align: left;
+}
+
+footer > div {
+  box-sizing: border-box;
+  padding: 0 10px;
+  width: 50%;
+}
+
+.footer-section > div {
+  display: block;
+}
+
+.footer-section > p {
+  padding: 10px 0;
+}
+
+.footer-section li {
+  border-bottom: white solid thin;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-section-gallery > img {
+  height: 80px;
+  padding: 0 0 5px 0;
+  width: 80px;
+}

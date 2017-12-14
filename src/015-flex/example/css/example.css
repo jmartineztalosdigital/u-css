@@ -1,0 +1,96 @@
+/* Practice Layout */
+
+footer {
+  background-color: #9370DB;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+footer > div {
+  width: 80%;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 200px 0 10px 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card-section {
+  border: lightgray solid medium;
+  border-radius: 5px;
+  max-width: 350px;
+  margin: 10px;
+  width: 95%;
+}
+
+.card-section:hover .card-section-image {
+  overflow: hidden;
+}
+
+.card-section:hover .card-section-image > img {
+  transform: scale(1.2);
+  transition: all 1s;
+}
+
+.card-section li {
+  color: gray;
+  display: inline;
+}
+
+.card-section li:hover {
+  color: black;
+}
+
+.card-section ul {
+  margin: 0;
+  padding: 5px;
+}
+
+.card-section > p {
+  border-bottom: lightgray solid medium;
+  margin: 0;
+  padding: 5px;
+}
+
+.card-section-footer {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-section-footer > div {
+  color: hotpink;
+  padding: 5px;
+}
+
+.card-section-image > img {
+  max-width: 350px;
+  width: 100%;
+}
+
+.footer-section > div {
+  display: none;
+}
+
+.footer-section > p {
+  padding: 50px 0;
+}
+
+.page-content {
+  background: url("../../solved/css/images/image.jpg") no-repeat;
+  background-size: 100vw 300px;
+  padding: 0;
+}
+.trash{
+	color: black;
+}
