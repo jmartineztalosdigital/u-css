@@ -1,4 +1,24 @@
 /* Practice Layout */
+a {
+  color: #F0AD4E;
+}
+
+.btn-primary {
+  background-color: #F0AD4E;
+  border-color: #F0AD4E;
+}
+
+.card-block-flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.card-img-top-small {
+  height: 40px;
+  margin-right: 10px;
+  width: 40px;
+}
 
 .trash{
 	color: black;
